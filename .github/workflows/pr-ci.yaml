@@ -74,4 +74,4 @@ jobs:
       - name: Push image to GHCR
         run: |
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:pr-${{ github.event.pull_request.number }}
-          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
+          docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sha-${{ github.sha }} 
