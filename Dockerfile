@@ -19,7 +19,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # ---- Stage 2: final image ----
 FROM python:3.13-slim
 
-# Не-root користувач - контейнер не повинен працювати від root, це базова best-practice безпеки
+
 RUN useradd --create-home appuser
 WORKDIR /app
 
